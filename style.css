@@ -1,0 +1,129 @@
+*{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0px;
+    color: white;
+    box-sizing: border-box;
+}
+.container{
+    padding: 0px 50px;
+}
+/* <--------------HEADER SECTION STARTS---------------------------------> */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./Images/PortfolioBg.jpg);
+}
+.header .container{
+    background-color: transparent;
+}
+.navbar{
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.logo{
+    width: 140px;
+    margin-left: 30px;
+}
+.nav-link, .nav-links, a,i{
+    background-color: transparent;
+}
+.nav-link{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.nav-link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.nav-link a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.nav-link a:hover::after {
+    width: 100%;
+}
+.header-text{
+    color: #fff;
+    /*border: 1px solid white;*/
+    margin-top: 15%;
+    font-size: 30px;
+    background-color: transparent;
+}
+.header-text p, .header-text h1 {
+    background-color: transparent; /* Ensure transparent background */
+}
+.header-text h1{
+    font-size:60px;
+    margin-top: 20px;
+    background-color: transparent;
+}
+.header-text h1 span{
+    color:#ff004f;
+    margin-left: 0px;
+    background-color: transparent;
+}
+/* <--------------HEADER SECTION ENDS---------------------------------> */
+
+
+
+
+
+
+
+
+/*<--------------------------------- MEDIA QUERIES ---------------------------->*/
+.navbar i{
+    color: #ff004f;
+}
+@media screen  and (max-width :600px){
+    /* ------------------------- HEADER ------------------------------ */
+    .header{
+        background-image: url(./Images/PortfolioBgSmall.jpg);
+    }
+    .header-text{
+        margin-top: 60vh;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .navbar i {
+        color: white;
+        display: block;
+        font-size: 25px;
+    }
+    .navbar .nav-links{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px; /* to hide menubar initially*/
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    .navbar .nav-links .nav-link{
+        display: block;
+        margin: 25px;
+    }
+    .navbar .nav-links i{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
