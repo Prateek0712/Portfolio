@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .container{
-    padding: 0px 50px;
+    padding: 10px 50px;
 }
 /* <--------------HEADER SECTION STARTS---------------------------------> */
 .header{
@@ -21,7 +21,6 @@
     background-color: transparent;
 }
 .navbar{
-    border-bottom: 1px solid gainsboro;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +77,54 @@
     background-color: transparent;
 }
 /* <--------------HEADER SECTION ENDS---------------------------------> */
+/* <--------------ABOUT SECTION STARTS---------------------------------> */
+#aboutMe{
+    padding:65px 0px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 27%; /*width  of col will 35% to  the parent*/
+}
+.about-col-1 img{
+    width: 100%;
+    border: 2px solid #ff004f;
+    border-radius: 15px;
+    
+}
+.about-col-2{
+    flex-basis: 65%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+.about-col-2 p{
+    font-size: 15px;
+}
+.about-col-1 {
+    position: relative;
+    display: inline-block; /* Ensures the container wraps around the image */
+}
 
+/* Initial border settings */
+.about-col-1 .User {
+    border: 3px solid transparent; /* Transparent border */
+    border-radius: 10px; /* Adjust border radius */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Border settings on hover */
+.about-col-1:hover .User {
+    border-color: #ff004f; /* Change border color on hover */
+    box-shadow: 0 0 10px 3px #ff004f; /* Glow effect with the desired color */
+}
+/* <--------------ABOUT SECTION END---------------------------------> */
 
 
 
@@ -88,7 +134,7 @@
 
 /*<--------------------------------- MEDIA QUERIES ---------------------------->*/
 .navbar i{
-    color: #ff004f;
+    display: none;
 }
 @media screen  and (max-width :600px){
     /* ------------------------- HEADER ------------------------------ */
@@ -116,6 +162,8 @@
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s ease;
     }
     .navbar .nav-links .nav-link{
         display: block;
@@ -126,5 +174,24 @@
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    .navbar i{
+        margin-right: 2%;
+    }
+    .logo{
+        width: 140px;
+        margin-left: 10px;
+    }
+    /* <----------------------------------------- About Me ------------------------------------------> */
+    .container .row{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .about-col-1 .User{
+        border: 2px solid #ff004f;
+        transition: border-color 0.5s ease;
+    }
+    .about-col-1:hover .User {
+        box-shadow: 0 0 10px 4px #ff004f; /* Glow effect with the desired color */
     }
 }

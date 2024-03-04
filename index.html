@@ -11,19 +11,19 @@
     </head>
     <body>
         <!--------------------------- HEADER SECTION ------------------------------------>
-       <div class="header">
+       <div class="header" id="header">
         <div class="container">
             <div class="navbar">
                 <img src="./Images/PortfolioName.jpg" alt="Pratik" class="logo">
-                <span class="nav-links">
+                <span class="nav-links" id="sidemenu">
                     <span class="nav-link"><a href="#">Home</a></span>
                     <span class="nav-link"><a href="#">About</a></span>
                     <span class="nav-link"><a href="#">Project</a></span>
                     <span class="nav-link"><a href="#">Skill</a></span>
                     <span class="nav-link"><a href="#">Contact</a></span>
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </span> 
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div> 
         <div class="header-text">
             <p>Java Full Stack Developer</p>
@@ -31,5 +31,37 @@
         </div>  
         </div>    
        </div>
+       <!--ABOUT SECTION-->
+       <div id="aboutMe">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/UserBbgBlack.jpg" alt="User" class="User">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos, ex assumenda porro alias voluptatum eveniet nesciunt! Dolores temporibus nesciunt officiis asperiores. Dolorum reiciendis neque eum nihil eos commodi architecto. Pariatur consectetur nulla officiis ad expedita iusto corrupti quibusdam temporibus ullam explicabo, quis laudantium et, excepturi laborum similique, error optio?</p>
+                </div>
+            </div>
+        </div>
+       </div>
+
+       <!--------------------------------------------  JS Scripting ---------------------------------------->
+       <script>
+        function toggleMenu() {
+            var sideMenu = document.getElementById("sidemenu");
+            if (sideMenu.style.right === "0px") {
+                sideMenu.style.right = "-200px"; // Hide side menu
+            } else {
+                sideMenu.style.right = "0px"; // Display side menu
+            }
+        }
+
+        function closeMenu() {
+            var sideMenu = document.getElementById("sidemenu");
+            sideMenu.style.right = "-200px"; // Hide side menu
+        }
+    </script>
+    
     </body>
 </html>
