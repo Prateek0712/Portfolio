@@ -16,11 +16,11 @@
             <div class="navbar">
                 <img src="./Images/PortfolioName.jpg" alt="Pratik" class="logo">
                 <span class="nav-links" id="sidemenu">
-                    <span class="nav-link"><a href="#">Home</a></span>
-                    <span class="nav-link"><a href="#">About</a></span>
-                    <span class="nav-link"><a href="#">Project</a></span>
+                    <span class="nav-link"><a href="#header">Home</a></span>
+                    <span class="nav-link"><a href="#aboutMe">About</a></span>
+                    <span class="nav-link"><a href="#project">Project</a></span>
                     <span class="nav-link"><a href="#">Skill</a></span>
-                    <span class="nav-link"><a href="#">Contact</a></span>
+                    <span class="nav-link"><a href="#contact">Contact</a></span>
                     <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </span> 
                 <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
@@ -45,7 +45,70 @@
             </div>
         </div>
        </div>
-
+              <!---------------------------- PROJECT SECTION--------------------------------------->
+              <div id="project">
+                <div class="container">
+                    <h1 class="sub-title">Projects</h1>
+                    <div class="project-list">
+                        <div class="proj">
+                            <img alt="BookMyShow" src="./Images/BookMyShow.jpg">
+                            <div class="layer">
+                                <h3>BookMyShow Backend Clone</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Labore dolore optio ex consectetur debitis animi eum ad expedita delectus quasi?</p>
+                                <a href="#"><button class="button-30" role="button">VISIT</button></i></a>
+                            </div>
+                        </div>
+                        <div class="proj">
+                            <img alt="LMS" src="./Images/LMS.jpg">
+                            <div class="layer">
+                                <h3>BookMyShow Backend Clone</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Labore dolore optio ex consectetur debitis animi eum ad expedita delectus quasi?</p>
+                                    <a href="#"><button class="button-30" role="button">VISIT</button></i></a>
+                            </div>
+                        </div>
+                        <div class="proj">
+                            <img src="./Images/BlinkIt.jpg" alt="BlinkIt">
+                            <div class="layer">
+                                <h3>BookMyShow Backend Clone</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Labore dolore optio ex consectetur debitis animi eum ad expedita delectus quasi?</p>
+                                <a href="#"><button class="button-30" role="button">VISIT</button></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+                      <!---------------------------------------CONTACT ME----------------------------------->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane" style="color: #ff004f;"></i> prateek7120@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone" style="color: #ff004f;"></i> +91-8308009408</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-github" ></i></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram" ></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin" ></i></a>
+                        <a href="#"><i class="fa-solid fa-a" ></i></a>
+                    </div>
+                    <a href="./ImagesPratik_Resume_feb_ (1).pf" download><button class="btn-2">Download CV</button></a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6" ></textarea>
+                        <button type="submit" class="btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright" >
+            <p>Made with <i class="fa-solid fa-heart" style="color: #ff004f;"></i> by Pratik Jadhav</p>
+        </div>
        <!--------------------------------------------  JS Scripting ---------------------------------------->
        <script>
         function toggleMenu() {
